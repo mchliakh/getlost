@@ -1,0 +1,69 @@
+<%= form_for(@park) do |f| %>
+  <% if @park.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@park.errors.count, "error") %> prohibited this park from being saved:</h2>
+
+      <ul>
+      <% @park.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :province %><br>
+    <%= f.text_field :province %>
+  </div>
+  <div class="field">
+    <%= f.label :season_start %><br>
+    <%= f.number_field :season_start %>
+  </div>
+  <div class="field">
+    <%= f.label :season_end %><br>
+    <%= f.number_field :season_end %>
+  </div>
+  <div class="field">
+    <%= f.label :visitors %><br>
+    <%= f.number_field :visitors %>
+  </div>
+  <div class="field">
+    <%= f.label :area %><br>
+    <%= f.text_field :area %>
+  </div>
+  <div class="field">
+    <%= f.label :summer_mean_temp %><br>
+    <%= f.text_field :summer_mean_temp %>
+  </div>
+  <div class="field">
+    <%= f.label :winter_mean_temp %><br>
+    <%= f.text_field :winter_mean_temp %>
+  </div>
+  <div class="field">
+    <%= f.label :by_car %><br>
+    <%= f.check_box :by_car %>
+  </div>
+  <div class="field">
+    <%= f.label :by_plane %><br>
+    <%= f.check_box :by_plane %>
+  </div>
+  <div class="field">
+    <%= f.label :by_ferry %><br>
+    <%= f.check_box :by_ferry %>
+  </div>
+  <div class="field">
+    <%= f.label :by_snowmobile %><br>
+    <%= f.check_box :by_snowmobile %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_species %><br>
+    <%= f.number_field :number_of_species %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

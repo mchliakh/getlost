@@ -1,0 +1,8 @@
+<% @parks.sort_by {|p| p.name }.each do |park| %>
+  <div class="park <%= park.class_name %>">
+    <% if park.gem %>
+      <div class="gem icon-gem"></div>
+    <% end %>
+    <%= link_to park.name, park %>
+  </div>
+<% end %>

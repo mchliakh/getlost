@@ -1,0 +1,170 @@
+// Place all the styles related to the Parks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
+
+body {
+  color: #333;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'parks';
+  src:url('parks.eot?-41ki45');
+  src:url('parks.eot?#iefix-41ki45') format('embedded-opentype'),
+    url('parks.woff?-41ki45') format('woff'),
+    url('parks.ttf?-41ki45') format('truetype'),
+    url('parks.svg?-41ki45#parks') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'parks';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-air:before {
+  content: "\e600";
+}
+.icon-back:before {
+  content: "\e601";
+}
+.icon-climate:before {
+  content: "\e602";
+}
+.icon-find:before {
+  content: "\e603";
+}
+.icon-gem:before {
+  content: "\e604";
+}
+.icon-land:before {
+  content: "\e605";
+}
+.icon-price:before {
+  content: "\e606";
+}
+.icon-snow:before {
+  content: "\e607";
+}
+.icon-traffic:before {
+  content: "\e608";
+}
+.icon-water:before {
+  content: "\e609";
+}
+.icon-logo:before {
+  content: "\e60a";
+}
+
+
+header {
+  height: 220px;
+  color: #fff;
+  background-repeat: no-repeat;
+  position: relative;
+  #text {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 30%, rgba(0,0,0,0.9) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.9))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.9) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.9) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.9) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.9) 100%); /* W3C */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    h1 {
+      font-size: 57px;
+    }
+    h2 {
+      font-size: 23px;
+    }
+  }
+}
+
+.aulavik { background-image: url(image-path('aulavik.jpg')) }
+.auyuittuq { background-image: url(image-path('auyuittuq.jpg')) }
+.ivvavik { background-image: url(image-path('ivvavik.jpg')) }
+.pacific-rim { background-image: url(image-path('pacific-rim.jpg')) }
+.grasslands { background-image: url(image-path('grasslands.jpg')) }
+.bruce-peninsula { background-image: url(image-path('bruce-peninsula.jpg')) }
+.georgian-bay-islands { background-image: url(image-path('georgian-bay-islands.jpg')) }
+.point-pelee { background-image: url(image-path('point-pelee.jpg')) }
+.st-lawrence-islands { background-image: url(image-path('st-lawrence-islands.jpg')) }
+.nahanni { background-image: url(image-path('nahanni.jpg')) }
+.wapusk { background-image: url(image-path('wapusk.jpg')) }
+.quttinirpaaq { background-image: url(image-path('quttinirpaaq.jpg')) }
+.sirmilik { background-image: url(image-path('sirmilik.jpg')) }
+.tuktut-nogait { background-image: url(image-path('tuktut-nogait.jpg')) }
+.cape-breton-highlands { background-image: url(image-path('cape-breton-highlands.jpg')) }
+.fundy { background-image: url(image-path('fundy.jpg')) }
+.kejimkujik { background-image: url(image-path('kejimkujik.jpg')) }
+.kouchibouguac { background-image: url(image-path('kouchibouguac.jpg')) }
+.prince-edward-island { background-image: url(image-path('prince-edward-island.jpg')) }
+.terra-nova { background-image: url(image-path('terra-nova.jpg')) }
+.elk-island { background-image: url(image-path('elk-island.jpg')) }
+.forillon { background-image: url(image-path('forillon.jpg')) }
+.gros-morne { background-image: url(image-path('gros-morne.jpg')) }
+.la-mauricie { background-image: url(image-path('la-mauricie.jpg')) }
+.mingan-archipelago { background-image: url(image-path('mingan-archipelago.jpg')) }
+.prince-albert { background-image: url(image-path('prince-albert.jpg')) }
+.pukaskwa { background-image: url(image-path('pukaskwa.jpg')) }
+.riding-mountain { background-image: url(image-path('riding-mountain.jpg')) }
+.wood-buffalo { background-image: url(image-path('wood-buffalo.jpg')) }
+.banff { background-image: url(image-path('banff.jpg')) }
+.jasper { background-image: url(image-path('jasper.jpg')) }
+.kluane { background-image: url(image-path('kluane.jpg')) }
+.kootenay { background-image: url(image-path('kootenay.jpg')) }
+.mount-revelstoke { background-image: url(image-path('mount-revelstoke.jpg')) }
+.waterton-lakes { background-image: url(image-path('waterton-lakes.jpg')) }
+.yoho { background-image: url(image-path('yoho.jpg')) }
+.gwaii-hanaas { background-image: url(image-path('gwaii-hanaas.jpg')) }
+
+div.park {
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  a {
+    text-decoration: none;
+    font-size: 48px;
+    color: #fff;
+    display: block;
+    height: 100%;
+    padding: 175px 0 0 10px;
+    background: -moz-linear-gradient(top,  rgba(26,26,26,0) 30%, rgba(26,26,26,0.9) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,rgba(26,26,26,0)), color-stop(100%,rgba(26,26,26,0.9))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(26,26,26,0) 30%,rgba(26,26,26,0.9) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(26,26,26,0) 30%,rgba(26,26,26,0.9) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(26,26,26,0) 30%,rgba(26,26,26,0.9) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(26,26,26,0) 30%,rgba(26,26,26,0.9) 100%); /* W3C */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.gem {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  font-size: 60px;
+  border-radius: 60px;
+  color: white;
+  background-color: #35cb8a;
+  border: 3px solid #fff;
+}

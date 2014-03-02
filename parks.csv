@@ -1,0 +1,38 @@
+name,province,vistors,GEM?,climate region,by land,by air,by water,by snow,free/paid,
+Aulavik,,,,Arctic,no,yes,no,no,paid,$$$
+Auyuittuq,,,,Arctic,no,yes,yes,yes,paid,$$
+Ivvavik,,,,Arctic,no,yes,no,no,paid,$
+Quttinirpaaq,,,,Arctic,yes,no,yes,no,paid,$
+Sirmilik,,,,Arctic,no,yes,yes,yes,paid,$
+Tuktut Nogait,,,GEM,Arctic,yes,yes,yes,no,paid,$
+Cape Breton Highlands,,,,Atlantic Maritime,yes,no,yes,no,paid,$
+Fundy,,,,Atlantic Maritime,yes,no,no,no,paid,$
+Kejimkujik,,,GEM,Atlantic Maritime,yes,yes,yes,no,paid,$$
+Kouchibouguac,,,,Atlantic Maritime,yes,yes,no,no,paid,$$
+Prince Edward Island,,,,Atlantic Maritime,yes,no,no,no,paid,$
+Terra Nova,,,,Atlantic Maritime,yes,yes,yes,no,paid,$$
+Elk Island,,,,Boreal,yes,no,no,no,paid,$$$
+Forillon,,,,Boreal,yes,yes,no,no,paid,$
+Gros Morne,,,,Boreal,yes,yes,no,no,paid,$
+La Mauricie,,,,Boreal,yes,no,no,no,paid,$$
+Mingan Archipelago,,,,Boreal,yes,yes,yes,no,paid,$
+Prince Albert,,,,Boreal,yes,no,no,no,paid,$
+Pukaskwa,,,,Boreal,yes,yes,yes,no,paid,$
+Riding Mountain,,,,Boreal,yes,no,no,no,paid,$
+Wood Buffalo,,,GEM,Boreal,yes,yes,yes,no,paid,$$
+Banff,,,,Mountainous,yes,yes,no,no,paid,$$$
+Jasper,,,,Mountainous,yes,yes,no,no,paid,$
+Kluane,,,GEM,Mountainous,yes,yes,yes,no,paid,$
+Kootenay,,,,Mountainous,yes,yes,no,no,paid,$
+Mount Revelstoke & Glacier,,,,Mountainous,yes,no,no,no,paid,$
+Waterton Lakes,,,,Mountainous,yes,yes,no,no,paid,$$
+Yoho,,,,Mountainous,yes,yes,no,no,paid,$$
+Gwaii Hanaas & Haida Heritage Site,,,GEM,Pacific Maritime,no,yes,yes,no,paid,$
+Pacific Rim,,,,Pacific Maritime,yes,yes,yes,no,paid,$$$
+Grasslands,,,GEM,Prairie,yes,yes,no,no,free,$
+Bruce Peninsula,,,,Southeastern,yes,no,no,no,paid,$
+Georgian Bay Islands,,,,Southeastern,no,no,yes,no,paid,$$
+Point Pelee,,,,Southeastern,yes,no,no,no,paid,$$
+St. Lawrence Islands,,,,Southeastern,yes,no,yes,no,paid,$
+Nahanni,,,,Subarctic,no,yes,no,no,paid,$
+Wapusk,,,GEM,Subarctic,yes,yes,yes,no,free,$$

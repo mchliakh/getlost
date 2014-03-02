@@ -1,0 +1,224 @@
+[
+  {
+    "name": "Gros Morne",
+    "province": "Newfoundland & Labrador",
+    "visitors": 182392,
+    "area": 1805
+  },
+  {
+    "name": "Terra Nova",
+    "province": "Newfoundland & Labrador",
+    "visitors": 259079,
+    "area": 399.9
+  },
+  {
+    "name": "Prince Edward Island",
+    "province": "Prince Edward Island",
+    "visitors": 500227,
+    "area": 21.5
+  },
+  {
+    "name": "Cape Breton Highlands",
+    "province": "Nova Scotia",
+    "visitors": 164098,
+    "area": 950
+  },
+  {
+    "name": "Kejimkujik",
+    "province": "Nova Scotia",
+    "visitors": 32290,
+    "area": 403.7
+  },
+  {
+    "name": "Fundy",
+    "province": "New Brunswick",
+    "visitors": 240481,
+    "area": 205.9
+  },
+  {
+    "name": "Kouchibouguac",
+    "province": "New Brunswick",
+    "visitors": 157937,
+    "area": 239.2
+  },
+  {
+    "name": "Forillon",
+    "province": "Quebec",
+    "visitors": 115981,
+    "area": 240.4
+  },
+  {
+    "name": "La Mauricie",
+    "province": "Quebec",
+    "visitors": 162119,
+    "area": 536
+  },
+  {
+    "name": "Mingan Archipelago",
+    "province": "Quebec",
+    "visitors": 32744,
+    "area": 150.7
+  },
+  {
+    "name": "Bruce Peninsula",
+    "province": "Ontario",
+    "visitors": 251825,
+    "area": 154
+  },
+  {
+    "name": "Georgian Bay Islands",
+    "province": "Ontario",
+    "visitors": 38790,
+    "area": 13.5
+  },
+  {
+    "name": "Point Pelee",
+    "province": "Ontario",
+    "visitors": 245780,
+    "area": 15.5
+  },
+  {
+    "name": "Pukaskwa",
+    "province": "Ontario",
+    "visitors": 11234,
+    "area": 1878
+  },
+  {
+    "name": "St. Lawrence Islands",
+    "province": "Ontario",
+    "visitors": 40211,
+    "area": 8.7
+  },
+  {
+    "name": "Riding Mountain",
+    "province": "Manitoba",
+    "visitors": 305882,
+    "area": 2969
+  },
+  {
+    "name": "Wapusk",
+    "province": "Manitoba",
+    "visitors": 193,
+    "area": 11475
+  },
+  {
+    "name": "Grasslands",
+    "province": "Saskatchewan",
+    "visitors": 6132,
+    "area": 500
+  },
+  {
+    "name": "Prince Albert",
+    "province": "Saskatchewan",
+    "visitors": 238401,
+    "area": 3875
+  },
+  {
+    "name": "Banff",
+    "province": "Alberta",
+    "visitors": 3306203,
+    "area": 6641
+  },
+  {
+    "name": "Elk Island",
+    "province": "Alberta",
+    "visitors": 220758,
+    "area": 194
+  },
+  {
+    "name": "Jasper",
+    "province": "Alberta",
+    "visitors": 1993139,
+    "area": 11228
+  },
+  {
+    "name": "Waterton Lakes",
+    "province": "Alberta",
+    "visitors": 402542,
+    "area": 505
+  },
+  {
+    "name": "Gwaii Hanaas & Haida Heritage Site",
+    "province": "British Columbia",
+    "visitors": 1834,
+    "area": 1495
+  },
+  {
+    "name": "Kootenay",
+    "province": "British Columbia",
+    "visitors": 434781,
+    "area": 1406
+  },
+  {
+    "name": "Mount Revelstoke & Glacier",
+    "province": "British Columbia",
+    "visitors": 643112,
+    "area": 1609
+  },
+  {
+    "name": "Pacific Rim",
+    "province": "British Columbia",
+    "visitors": 753324,
+    "area": 510
+  },
+  {
+    "name": "Yoho",
+    "province": "British Columbia",
+    "visitors": 560201,
+    "area": 1313
+  },
+  {
+    "name": "Ivvavik",
+    "province": "Yukon",
+    "visitors": 112,
+    "area": 9750
+  },
+  {
+    "name": "Kluane",
+    "province": "Yukon",
+    "visitors": 43744,
+    "area": 21980
+  },
+  {
+    "name": "Aulavik",
+    "province": "Northwest Territories",
+    "visitors": 8,
+    "area": 12200
+  },
+  {
+    "name": "Nahanni",
+    "province": "Northwest Territories",
+    "visitors": 840,
+    "area": 4765.2
+  },
+  {
+    "name": "Tuktut Nogait",
+    "province": "Northwest Territories",
+    "visitors": 7,
+    "area": 16340
+  },
+  {
+    "name": "Wood Buffalo",
+    "province": "Northwest Territories",
+    "visitors": 1790,
+    "area": 44807
+  },
+  {
+    "name": "Auyuittuq",
+    "province": "Nunavut",
+    "visitors": 529,
+    "area": 21469.4
+  },
+  {
+    "name": "Quttinirpaaq",
+    "province": "Nunavut",
+    "visitors": 23,
+    "area": 37775
+  },
+  {
+    "name": "Sirmilik",
+    "province": "Nunavut",
+    "visitors": 47,
+    "area": 22252
+  }
+]

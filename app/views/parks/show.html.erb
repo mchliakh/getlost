@@ -1,0 +1,11 @@
+<!-- <p id="notice"><%= notice %></p> -->
+
+<header class="<%= @park.class_name %>">
+  <div id="text">
+    <h1><%= "#{@park.name} (#{@park.crowdedness})" %></h1>
+    <h2><%= @park.province %></h2>
+  </div>
+</header>
+
+<%= link_to 'Edit', edit_park_path(@park) %> |
+<%= link_to 'Back', parks_path %>
