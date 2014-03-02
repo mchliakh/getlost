@@ -8,8 +8,8 @@ class Park < ActiveRecord::Base
   end
 
   def crowdedness
-    return 'peaceful' if traffic < 100
-    return 'popular' if traffic > 100 && traffic < 1000
-    return 'crowded'
+    return 'Tranquil' if traffic < 100
+    return 'Popular' if traffic > 100 && traffic < 1000
+    return 'Crowded'
   end
 end

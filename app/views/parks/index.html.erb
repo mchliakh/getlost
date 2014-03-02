@@ -1,3 +1,11 @@
+<div id="splash">
+  <div id="logo">
+    <span class="icon-logo"></span>
+  </div>
+  <div id="title">GET LOST</div>
+  <div id="subtitle">a guide to canadian national parks</div>
+  <div id="scroll">scroll down to explore</div>
+</div>
 <% @parks.sort_by {|p| p.name }.each do |park| %>
   <div class="park <%= park.class_name %>">
     <% if park.gem %>

@@ -1,11 +1,56 @@
 <!-- <p id="notice"><%= notice %></p> -->
 
 <header class="<%= @park.class_name %>">
+  <div id="back">
+    <%= link_to '', {controller: :parks, action: :index}, {class: 'icon-back'} %>
+    <!-- <span class="icon-back"></span> -->
+  </div>
+  <% if @park.gem %>
+    <div class="gem icon-gem"></div>
+  <% end %>
   <div id="text">
-    <h1><%= "#{@park.name} (#{@park.crowdedness})" %></h1>
+    <h1><%= @park.name %></h1>
     <h2><%= @park.province %></h2>
   </div>
 </header>
 
-<%= link_to 'Edit', edit_park_path(@park) %> |
-<%= link_to 'Back', parks_path %>
+<div id="body">
+  <div>
+    <span class="icon-climate"></span> <%= @park.climate_region %>
+  </div>
+  <div>
+    <span class="icon-traffic"></span> <%= @park.crowdedness %>
+  </div>
+  <% if @park.by_land %>
+    <div>
+      <span class="icon-land"></span> Car Access
+    </div>
+  <% end %>
+  <% if @park.by_air %>
+    <div>
+      <span class="icon-air"></span> Plane Access
+    </div>
+  <% end %>
+  <% if @park.by_water %>
+    <div>
+      <span class="icon-water"></span> Boat Access
+    </div>
+  <% end %>
+  <% if @park.by_snow %>
+    <div>
+      <span class="icon-snow"></span> Snowmobile Access
+    </div>
+  <% end %>
+  <div>
+    <span class="icon-price"></span> <%= @park.free ? 'Free' : 'Paid' %>
+  </div>
+</div>
+
+<div id="about">
+  <h3>Legend</h3>
+  <p>The gem icon presents parks chosen as a symbol of their respective biome, these parks include vast, beautiful and unique landscapes untouched by human development.</p>
+  <p>The biome of a park represents its position within Canadian geography, ranging from northern arctic glacial parks to lush Pacific maritime rainforests.</p>
+  <p>The crowded rating sorts parks between three categories: Crowded parks are typically packed with visitors, Popular parks are in between and Tranquil parks are serene with fewer attendees.</p>
+  <p>Vehicle icons represent the park's accessibility, most parks are accessible by car and other modes of transport, whereas some secluded parks may only be accessible via ferries or chartered planes.</p>
+  <p>Most parks have fees associated with a visit, and some may require additional expenses for chartered access or guides.</p>
+</div>

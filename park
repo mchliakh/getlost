@@ -1,0 +1,190 @@
+--
+-- PostgreSQL database dump
+--
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+
+--
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- Name: parks; Type: TABLE; Schema: public; Owner: mchliakh; Tablespace: 
+--
+
+CREATE TABLE parks (
+    id integer NOT NULL,
+    name character varying(255),
+    province character varying(255),
+    visitors integer,
+    area double precision,
+    by_land boolean,
+    by_air boolean,
+    by_water boolean,
+    by_snow boolean,
+    created_at timestamp without time zone,
+    updated_at timestamp without time zone,
+    free boolean,
+    climate_region character varying(255),
+    gem boolean
+);
+
+
+ALTER TABLE public.parks OWNER TO mchliakh;
+
+--
+-- Name: parks_id_seq; Type: SEQUENCE; Schema: public; Owner: mchliakh
+--
+
+CREATE SEQUENCE parks_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.parks_id_seq OWNER TO mchliakh;
+
+--
+-- Name: parks_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mchliakh
+--
+
+ALTER SEQUENCE parks_id_seq OWNED BY parks.id;
+
+
+--
+-- Name: schema_migrations; Type: TABLE; Schema: public; Owner: mchliakh; Tablespace: 
+--
+
+CREATE TABLE schema_migrations (
+    version character varying(255) NOT NULL
+);
+
+
+ALTER TABLE public.schema_migrations OWNER TO mchliakh;
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: mchliakh
+--
+
+ALTER TABLE ONLY parks ALTER COLUMN id SET DEFAULT nextval('parks_id_seq'::regclass);
+
+
+--
+-- Data for Name: parks; Type: TABLE DATA; Schema: public; Owner: mchliakh
+--
+
+COPY parks (id, name, province, visitors, area, by_land, by_air, by_water, by_snow, created_at, updated_at, free, climate_region, gem) FROM stdin;
+31	Aulavik	Northwest Territories	8	12200	f	t	f	f	2014-03-01 21:47:44.762081	2014-03-02 16:28:06.671897	f	Arctic	\N
+35	Auyuittuq	Nunavut	529	21469.4000000000015	f	t	t	t	2014-03-01 21:47:44.768226	2014-03-02 16:30:33.262015	f	Arctic	\N
+29	Ivvavik	Yukon	112	9750	f	t	f	f	2014-03-01 21:47:44.758804	2014-03-02 16:32:50.748063	f	Arctic	\N
+27	Pacific Rim	British Columbia	753324	510	t	t	t	f	2014-03-01 21:47:44.755254	2014-03-02 17:59:20.443126	f	Pacific Maritime	\N
+11	Bruce Peninsula	Ontario	251825	154	t	f	f	f	2014-03-01 21:47:44.72433	2014-03-02 17:59:20.448685	f	Southeastern	\N
+12	Georgian Bay Islands	Ontario	38790	13.5	f	f	t	f	2014-03-01 21:47:44.725601	2014-03-02 17:59:20.450962	f	Southeastern	\N
+13	Point Pelee	Ontario	245780	15.5	t	f	f	f	2014-03-01 21:47:44.727068	2014-03-02 17:59:20.453209	f	Southeastern	\N
+15	St. Lawrence Islands	Ontario	40211	8.69999999999999929	t	f	t	f	2014-03-01 21:47:44.729792	2014-03-02 17:59:20.456355	f	Southeastern	\N
+32	Nahanni	Northwest Territories	840	4765.19999999999982	f	t	f	f	2014-03-01 21:47:44.76371	2014-03-02 17:59:20.459413	f	Subarctic	\N
+26	Mount Revelstoke	British Columbia	643112	1609	t	f	f	f	2014-03-01 21:47:44.753197	2014-03-02 19:23:11.6853	f	Mountainous	\N
+18	Grasslands	Saskatchewan	6132	500	t	t	f	f	2014-03-01 21:47:44.740328	2014-03-02 19:50:43.15651	t	Prairie	t
+24	Gwaii Hanaas	British Columbia	1834	1495	f	t	t	f	2014-03-01 21:47:44.749742	2014-03-02 20:01:57.180984	f	Pacific Maritime	t
+5	Kejimkujik	Nova Scotia	32290	403.699999999999989	t	t	t	f	2014-03-01 21:47:44.715099	2014-03-02 20:01:59.83661	f	Atlantic Maritime	t
+30	Kluane	Yukon	43744	21980	t	t	t	f	2014-03-01 21:47:44.760422	2014-03-02 20:02:24.5737	f	Mountainous	t
+33	Tuktut Nogait	Northwest Territories	7	16340	t	t	t	f	2014-03-01 21:47:44.76545	2014-03-02 20:02:45.981765	f	Arctic	t
+17	Wapusk	Manitoba	193	11475	t	t	t	f	2014-03-01 21:47:44.735902	2014-03-02 20:03:02.134383	t	Subarctic	t
+34	Wood Buffalo	Northwest Territories	1790	44807	t	t	t	f	2014-03-01 21:47:44.766896	2014-03-02 20:03:17.991343	f	Boreal	t
+36	Quttinirpaaq	Nunavut	23	37775	t	f	t	f	2014-03-01 21:47:44.769652	2014-03-02 17:59:20.346102	f	Arctic	\N
+37	Sirmilik	Nunavut	47	22252	f	t	t	t	2014-03-01 21:47:44.771208	2014-03-02 17:59:20.352718	f	Arctic	\N
+4	Cape Breton Highlands	Nova Scotia	164098	950	t	f	t	f	2014-03-01 21:47:44.713597	2014-03-02 17:59:20.359287	f	Atlantic Maritime	\N
+6	Fundy	New Brunswick	240481	205.900000000000006	t	f	f	f	2014-03-01 21:47:44.716645	2014-03-02 17:59:20.361926	f	Atlantic Maritime	\N
+7	Kouchibouguac	New Brunswick	157937	239.199999999999989	t	t	f	f	2014-03-01 21:47:44.718468	2014-03-02 17:59:20.367522	f	Atlantic Maritime	\N
+3	Prince Edward Island	Prince Edward Island	500227	21.5	t	f	f	f	2014-03-01 21:47:44.712064	2014-03-02 17:59:20.37296	f	Atlantic Maritime	\N
+2	Terra Nova	Newfoundland & Labrador	259079	399.899999999999977	t	t	t	f	2014-03-01 21:47:44.709942	2014-03-02 17:59:20.377008	f	Atlantic Maritime	\N
+21	Elk Island	Alberta	220758	194	t	f	f	f	2014-03-01 21:47:44.745588	2014-03-02 17:59:20.379329	f	Boreal	\N
+8	Forillon	Quebec	115981	240.400000000000006	t	t	f	f	2014-03-01 21:47:44.719935	2014-03-02 17:59:20.381647	f	Boreal	\N
+1	Gros Morne	Newfoundland & Labrador	182392	1805	t	t	f	f	2014-03-01 21:47:44.700723	2014-03-02 17:59:20.384058	f	Boreal	\N
+9	La Mauricie	Quebec	162119	536	t	f	f	f	2014-03-01 21:47:44.721491	2014-03-02 17:59:20.386164	f	Boreal	\N
+10	Mingan Archipelago	Quebec	32744	150.699999999999989	t	t	t	f	2014-03-01 21:47:44.72294	2014-03-02 17:59:20.38835	f	Boreal	\N
+19	Prince Albert	Saskatchewan	238401	3875	t	f	f	f	2014-03-01 21:47:44.742286	2014-03-02 17:59:20.390562	f	Boreal	\N
+14	Pukaskwa	Ontario	11234	1878	t	t	t	f	2014-03-01 21:47:44.728396	2014-03-02 17:59:20.392764	f	Boreal	\N
+16	Riding Mountain	Manitoba	305882	2969	t	f	f	f	2014-03-01 21:47:44.731823	2014-03-02 17:59:20.394917	f	Boreal	\N
+20	Banff	Alberta	3306203	6641	t	t	f	f	2014-03-01 21:47:44.743877	2014-03-02 17:59:20.399354	f	Mountainous	\N
+22	Jasper	Alberta	1993139	11228	t	t	f	f	2014-03-01 21:47:44.747108	2014-03-02 17:59:20.421316	f	Mountainous	\N
+25	Kootenay	British Columbia	434781	1406	t	t	f	f	2014-03-01 21:47:44.75116	2014-03-02 17:59:20.426175	f	Mountainous	\N
+23	Waterton Lakes	Alberta	402542	505	t	t	f	f	2014-03-01 21:47:44.748435	2014-03-02 17:59:20.431063	f	Mountainous	\N
+28	Yoho	British Columbia	560201	1313	t	t	f	f	2014-03-01 21:47:44.757159	2014-03-02 17:59:20.433333	f	Mountainous	\N
+\.
+
+
+--
+-- Name: parks_id_seq; Type: SEQUENCE SET; Schema: public; Owner: mchliakh
+--
+
+SELECT pg_catalog.setval('parks_id_seq', 37, true);
+
+
+--
+-- Data for Name: schema_migrations; Type: TABLE DATA; Schema: public; Owner: mchliakh
+--
+
+COPY schema_migrations (version) FROM stdin;
+20140301213431
+20140301220550
+20140302020938
+20140302161518
+20140302161736
+20140302162328
+20140302163535
+\.
+
+
+--
+-- Name: parks_pkey; Type: CONSTRAINT; Schema: public; Owner: mchliakh; Tablespace: 
+--
+
+ALTER TABLE ONLY parks
+    ADD CONSTRAINT parks_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: unique_schema_migrations; Type: INDEX; Schema: public; Owner: mchliakh; Tablespace: 
+--
+
+CREATE UNIQUE INDEX unique_schema_migrations ON schema_migrations USING btree (version);
+
+
+--
+-- Name: public; Type: ACL; Schema: -; Owner: mchliakh
+--
+
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE ALL ON SCHEMA public FROM mchliakh;
+GRANT ALL ON SCHEMA public TO mchliakh;
+GRANT ALL ON SCHEMA public TO PUBLIC;
+
+
+--
+-- PostgreSQL database dump complete
+--
+
