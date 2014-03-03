@@ -1,5 +1,7 @@
 # GET LOST
 
+The live app is available at [http://whispering-dawn-1577.herokuapp.com/parks](http://whispering-dawn-1577.herokuapp.com/parks).
+
 Get Lost is about re-marketing National parks to people who have a limited awareness of Canadian parks, or have only heard of a few major ones.
 
 The app will feature a profile of each National park and graphically display data on the park location, biomes, fees and vehicle accessibility. We have also created an additional metric by combining attendance rates with size of the park to give a "crowded" rating between: Crowded, Popular and Peaceful. 
